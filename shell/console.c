@@ -59,7 +59,8 @@ void putchar(char string){
 
 int check_exit(){
 	
-	if ((VGA_MEMORY[CURR_LOC-2] == 't') && (VGA_MEMORY[CURR_LOC-4] == 'i') && 			(VGA_MEMORY[CURR_LOC-6] == 'x') && (VGA_MEMORY[CURR_LOC-8] == 'e')){
+	if ((VGA_MEMORY[CURR_LOC-2] == 't') && (VGA_MEMORY[CURR_LOC-4] == 'i') && 			
+	    (VGA_MEMORY[CURR_LOC-6] == 'x') && (VGA_MEMORY[CURR_LOC-8] == 'e')){
 		return TERM_NUM;
 	}
 }
